@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "name": "Food Recipe App",
+        "image": "../images/project-images/recipeApp-mockup.jpeg",
+        "github": "https://github.com/shaky411/Project-1",
+        "livesite": "https://shaky411.github.io/Project-1/"
+    },
+    {
+        "id": 2,
+        "name": "Music Playlist App",
+        "image": "../images/project-images/team-builder.jpeg",
+        "github": "https://github.com/babycodeher/back2life-music-playlist-app",
+        "livesite": "https://back2life.netlify.app/"
+    },
+    {
+        "id": 3,
+        "name": "Weather Dashboard",
+        "image": "../images/project-images/weatherApp-mockup.jpeg",
+        "github": "https://github.com/babycodeher/weather-dashboard",
+        "livesite": "https://babycodeher.github.io/weather-dashboard/"
+    },
+    {
+        "id": 4,
+        "name": "Work Day Planner",
+        "image": "../images/project-images/scheduler-mockup.jpeg",
+        "github": "https://github.com/babycodeher/Work-day-scheduler",
+        "livesite": "https://babycodeher.github.io/Work-day-scheduler/"
+    },
+    {
+        "id": 5,
+        "name": "Password Generator",
+        "image": "../images/project-images/passwordGen-mockup.jpeg",
+        "github": "https://github.com/babycodeher/Password-Generator",
+        "livesite": "https://babycodeher.github.io/Password-Generator/"
+    },
+    {
+        "id": 6,
+        "name": "Team Builder",
+        "image": "../images/project-images/team-profile.jpeg",
+        "github": "https://github.com/babycodeher/Team-Info-Generator"
+    }
+]
