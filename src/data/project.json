@@ -9,7 +9,7 @@
     {
         "id": 2,
         "name": "Music Playlist App",
-        "image": "../images/project-images/team-builder.jpeg",
+        "image": "../images/project-images/musicApp.jpeg",
         "github": "https://github.com/babycodeher/back2life-music-playlist-app",
         "livesite": "https://back2life.netlify.app/"
     },
