@@ -17,14 +17,14 @@ function HomePage() {
                 </p>
                 <div className="flex justify-center md:justify-start">
                     <Link to="/wumi-afolabi-portfolio/contact">
-                    <a className="p-3 px-6 text-white bg-darkWine rounded-full baseline hover:bg-lightWine md:block">Contact Me</a>
+                    <button className="p-3 px-6 text-white bg-darkWine rounded-full baseline hover:bg-lightWine md:block">Contact Me</button>
                     </Link>
                 </div>
             </div>
             {/* right item */} 
             <div className="flex flex-col justify-center items-center space-y-12 md:w-1/2">
             {/* Image */}
-                <img src={headshot} className='w-48 h-64 rounded-full md:w-auto' alt="profile picture" />
+                <img src={headshot} className='w-48 h-64 rounded-full md:w-auto' alt="designer's headshot" />
                 </div>
         </div>
         
