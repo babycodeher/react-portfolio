@@ -17,7 +17,7 @@ function HomePage() {
                 </p>
                 <div className="flex justify-center md:justify-start">
                     <Link to="/wumi-afolabi-portfolio/contact">
-                    <a href="" className="p-3 px-6 text-white bg-darkWine rounded-full baseline hover:bg-lightWine md:block">Contact Me</a>
+                    <a className="p-3 px-6 text-white bg-darkWine rounded-full baseline hover:bg-lightWine md:block">Contact Me</a>
                     </Link>
                 </div>
             </div>
