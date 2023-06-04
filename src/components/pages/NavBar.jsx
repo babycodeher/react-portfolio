@@ -14,16 +14,16 @@ function Navbar() {
                     {/* Menu items */}
                     <div className="hidden md:flex space-x-32">
                         <p className="text-2xl text-lightChamPink hover:text-redwood">
-                            <NavLink to="/wumi-afolabi-portfolio/" end>Home</NavLink>
+                            <NavLink to="/" end>Home</NavLink>
                         </p>
                         <p className="text-2xl text-lightChamPink hover:text-redwood">
-                            <NavLink to="/wumi-afolabi-portfolio/projects" end>Projects</NavLink>
+                            <NavLink to="/projects" end>Projects</NavLink>
                         </p>
                         <p className="text-2xl text-lightChamPink hover:text-redwood">
-                            <NavLink to="/wumi-afolabi-portfolio/about" end>About</NavLink>
+                            <NavLink to="/about" end>About</NavLink>
                         </p>
                         <p className="text-2xl text-lightChamPink hover:text-redwood">
-                            <NavLink to="/wumi-afolabi-portfolio/contact" end>Contact</NavLink>
+                            <NavLink to="/contact" end>Contact</NavLink>
                         </p>
                     </div>
                     <div className="-mr-2 flex md:hidden">
