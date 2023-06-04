@@ -25,14 +25,14 @@ function ContactForm() {
                 <h1 className="max-w-md text-4xl font-semibold text-center md:text-5xl md:text-left">
                     Get in touch
                 </h1>
-                <form className="max-w-lg mx-auto bg-white p-4 rounded-lg shadow-md">
+                <form className="max-w-lg w-full bg-white p-4 rounded-lg shadow-md">
 
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
                             Name
                         </label>
                         <input
-                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:shadow-outline"
                             id="name"
                             type="text"
                             placeholder="Enter your name"
@@ -45,7 +45,7 @@ function ContactForm() {
                             Address
                         </label>
                         <input
-                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:shadow-outline"
                             id="address"
                             type="text"
                             placeholder="Enter your address"
@@ -58,7 +58,7 @@ function ContactForm() {
                             Subject
                         </label>
                         <input
-                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:shadow-outline"
                             id="subject"
                             type="text"
                             placeholder="Enter the subject"
@@ -71,7 +71,7 @@ function ContactForm() {
                             Message
                         </label>
                         <textarea
-                            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="appearance-none border rounded w-full h-32 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:shadow-outline"
                             id="message"
                             type="text"
                             placeholder="Enter your message"
@@ -79,17 +79,22 @@ function ContactForm() {
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>
-                    <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="submit"
-                        onClick={handleSubmit}
-                    >
-                        Send Message
-                    </button>
+                    <div className="flex justify-center">
+                        <button
+                            className="p-3 px-6 text-white bg-blue-700 rounded-full baseline w-2/5 text-center hover:bg-lightWine md:block"
+                            type="submit"
+                            onClick={handleSubmit}
+                        >
+                            Send Message
+                        </button>
+                    </div>
                 </form>
             </div>
             {/* right item */}
-            <div className="flex flex-col justify-center items-center space-y-12 md:w-1/2">Contact details</div>
+            <div className="flex flex-col justify-center items-center space-y-12 md:w-1/2">Contact details
+                <div class="box-content h-32 w-32 bg-gray-400">
+                </div>
+            </div>
         </div>
     );
 }
