@@ -16,7 +16,7 @@ function HomePage() {
                     Come alone with me on my journey as I horn my skills building amazing apps and do check out my portfolio.  
                 </p>
                 <div className="flex justify-center md:justify-start">
-                    <Link to="/wumi-afolabi-portfolio/contact">
+                    <Link to="/contact">
                     <button className="p-3 px-6 text-white bg-blue-800 rounded-full baseline hover:bg-lightWine md:block">Contact Me</button>
                     </Link>
                 </div>
