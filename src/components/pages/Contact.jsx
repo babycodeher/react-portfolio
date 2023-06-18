@@ -25,7 +25,7 @@ function ContactForm() {
                 <h1 className="max-w-md text-4xl font-semibold text-center md:text-5xl md:text-left">
                     Get in touch
                 </h1>
-                <form className="max-w-lg w-full bg-white p-4 rounded-lg shadow-md">
+                <form className="contact max-w-lg w-full bg-white p-4 rounded-lg shadow-md data-netlify=true">
 
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
