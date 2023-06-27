@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+
 
 function Navbar() {
-    const [isNavOpen, setIsNavOpen] = useState(false);
+    const [nav, setNav] = useState(false);
 
-    const toggleNav = () => {
-        setIsNavOpen(!isNavOpen);
+    const handleNav = () => {
+        setNav(!nav);
     };
     return (
         <div className="bg-darkWine">
@@ -26,66 +29,22 @@ function Navbar() {
                             <NavLink to="/contact" end>Contact</NavLink>
                         </p>
                     </div>
-                    <div className="-mr-2 flex md:hidden">
-                        <button
-                            onClick={toggleNav}
-                            type="button"
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                            aria-controls="mobile-menu"
-                            aria-expanded={isNavOpen ? 'true' : 'false'}
-                        >
-                            <span className="sr-only">Open main menu</span>
-                            {/* Toggle icon */}
-                            {isNavOpen ? (
-                                <svg
-                                    className="block h-6 w-6"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            ) : (
-                                <svg
-                                    className="block h-6 w-6"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    />
-                                </svg>
-                            )}
-                        </button>
-                    </div>
+
                     {/* Hamburger Icon */}
-                    {/* <button id="menu-btn" className="block hamburger md:hidden focus:outline-none">
-                        <span className="hamburger-top"></span>
-                        <span className="hamburger-middle"></span>
-                        <span className="hamburger-bottom"></span>
-                    </button> */}
-                </div>
-                {/* Mobile menu */}
-                {/* <div className="md:hidden"> */}
-                <div className={`${isNavOpen ? 'block' : 'hidden'} md:hidden`}>
-                    <div id="menu" className="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-red sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                        <p className="text-md hover:text-redwood">Home</p>
-                        <p className="text-md hover:text-redwood">Projects</p>
-                        <p className="text-md hover:text-redwood">About</p>
-                        <p className="text-md hover:text-redwood">Contact</p>
+                    <div>
+                        <button onClick={handleNav} className='block md:hidden'>
+                            <FontAwesomeIcon icon={nav ? faClose : faBars} size='2x' className="text-lightChamPink items-center" />
+                        </button>
+                        {/* Mobile menu */}
+                        {nav && (
+                            <ul className="flex flex-col items-center py-2 space-y-2 font-bold md:hidden">
+                                {/* Menu items */}
+                                <li className="text-md text-lightChamPink hover:text-redwood"><NavLink to="/" end>Home</NavLink></li>
+                                <li className="text-md text-lightChamPink hover:text-redwood"><NavLink to="/projects" end>Projects</NavLink></li>
+                                <li className="text-md text-lightChamPink hover:text-redwood"><NavLink to="/about" end>About</NavLink></li>
+                                <li className="text-md text-lightChamPink hover:text-redwood"><NavLink to="/contact" end>Contact</NavLink></li>
+                            </ul>
+                        )}
                     </div>
                 </div>
             </nav>

@@ -13,7 +13,7 @@ function Projects() {
                     Recent Projects
                 </h1>
             </section>
-            <div className="container mx-auto flex flex-col gap-8 pb-8 md:grid grid-cols-3">
+            <div className="container mx-auto flex flex-col gap-8 pb-8 lg:grid grid-cols-3">
                 {/* Weather App */}
                 <div className="col-span-1 p-3 shadow shadow-[#472D30] hover:drop-shadow-2xl rounded">
                     <img className="object-cover w-full h-48 md:h-72" src={project[2].image} alt="" />

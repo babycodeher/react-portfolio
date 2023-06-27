@@ -42,13 +42,13 @@ function ContactForm() {
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 font-bold mb-2" htmlFor="address">
-                            Address
+                             Email Address
                         </label>
                         <input
                             className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:shadow-outline"
                             id="address"
                             type="text"
-                            placeholder="Enter your address"
+                            placeholder="Enter your email address"
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
                         />
@@ -81,7 +81,7 @@ function ContactForm() {
                     </div>
                     <div className="flex justify-center">
                         <button
-                            className="p-3 px-6 text-white bg-blue-700 rounded-full baseline w-2/5 text-center hover:bg-lightWine md:block"
+                            className="p-3 px-6 text-white bg-blue-700 rounded-full baseline w-1/2 text-center hover:bg-lightWine md:block"
                             type="submit"
                             onClick={handleSubmit}
                         >
